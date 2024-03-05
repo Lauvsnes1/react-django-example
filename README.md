@@ -34,6 +34,10 @@ You need to build React first, so Django can serve built files.
 
 First terminal tab:
 
+installere: yarn add parcel@latest --dev
+
+
+
 ```shell
 cd assets
 yarn parcel watch src/index.tsx
