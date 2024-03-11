@@ -12,17 +12,9 @@ const TodosIndexPage = memo(() => {
   let pageContext = usePageContext<{ todos: Todo[] }>();
   let todos = pageContext?.todos;
 
-  console.log("Hello");
   return (
     <div>
-      <h1>Todos</h1>
-      <NamesList />
-      <PostButton />
-      <ul>
-        {todos?.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+      <p>hei hei</p>
     </div>
   );
 });

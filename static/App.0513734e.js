@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"ag7zg":[function(require,module,exports) {
+})({"bwCub":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "99321d8ec63d3f24";
+module.bundle.HMR_BUNDLE_ID = "0b5fe5e50513734e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -604,82 +604,37 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"18BF5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e3f8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"7F5Te":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0342 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e3f8.prelude(module);
+$parcel$ReactRefreshHelpers$0342.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _usePageContext = require("../../utils/usePageContext");
-var _s = $RefreshSig$();
-const TodosIndexPage = /*#__PURE__*/ _s((0, _react.memo)(_c = _s(()=>{
-    _s();
-    let pageContext = (0, _usePageContext.usePageContext)();
-    let todos = pageContext?.todos;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            children: "testing"
-        }, void 0, false, {
-            fileName: "src/todos/pages/index.page.tsx",
-            lineNumber: 17,
-            columnNumber: 7
-        }, undefined)
+function App() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Hello world!"
     }, void 0, false, {
-        fileName: "src/todos/pages/index.page.tsx",
-        lineNumber: 16,
-        columnNumber: 5
-    }, undefined);
-}, "L5OSmYt+PTTodSfV7Ze+VkSH618=", false, function() {
-    return [
-        (0, _usePageContext.usePageContext)
-    ];
-})), "L5OSmYt+PTTodSfV7Ze+VkSH618=", false, function() {
-    return [
-        (0, _usePageContext.usePageContext)
-    ];
-});
-_c1 = TodosIndexPage;
-exports.default = TodosIndexPage;
-var _c, _c1;
-$RefreshReg$(_c, "TodosIndexPage$memo");
-$RefreshReg$(_c1, "TodosIndexPage");
+        fileName: "src/App.tsx",
+        lineNumber: 4,
+        columnNumber: 10
+    }, this);
+}
+_c = App;
+var _c;
+$RefreshReg$(_c, "App");
 
-  $parcel$ReactRefreshHelpers$e3f8.postlude(module);
+  $parcel$ReactRefreshHelpers$0342.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/usePageContext":"fvYni","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fvYni":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7ed8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7ed8.prelude(module);
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["bwCub","1xC6H"], null, "parcelRequiree635")
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "usePageContext", ()=>usePageContext);
-var _react = require("react");
-let usePageContext = ()=>{
-    let [pageContext, setPageContext] = (0, _react.useState)(undefined);
-    (0, _react.useEffect)(()=>{
-        let pageContext = document.getElementById("page-context").textContent;
-        setPageContext(JSON.parse(pageContext));
-    }, []);
-    return pageContext;
-};
-
-  $parcel$ReactRefreshHelpers$7ed8.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["ag7zg","1xC6H"], null, "parcelRequiree635")
-
-//# sourceMappingURL=index.page.c63d3f24.js.map
+//# sourceMappingURL=App.0513734e.js.map
