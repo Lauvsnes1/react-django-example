@@ -14,7 +14,7 @@ const TodosIndexPage = memo(() => {
 
   return (
     <div>
-      <p>hei</p>
+      <p>Hva skjer her egt</p>
     </div>
   );
 });
