@@ -15,8 +15,8 @@ const TodosIndexPage = memo(() => {
     let todos = pageContext?.todos
 
     return (
-    <div style={{display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center'}}>
-        <h1>Hello students in TBA4245</h1>
+    <div style={{display: "flex", justifyContent: "center", flexDirection: 'column', alignItems: 'center', backgroundColor: 'beige'}}>
+        <h1 >Hello students in TBA4245</h1>
         <p style={{paddingLeft: '20%', paddingRight: '20%', fontFamily: 'sans-serif'}}>
             <h3>Welcome to the semester project in GIB2, hope you are ready to get creative and make something fun!</h3>
             <br/>
