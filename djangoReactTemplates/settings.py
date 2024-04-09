@@ -58,7 +58,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = "djangoReactTemplates.urls"
 
-GDAL_LIBRARY_PATH = "/usr/local/Cellar/gdal/3.8.5/lib/libgdal.dylib"
+# uncomment for local development
+# GDAL_LIBRARY_PATH = "/usr/local/Cellar/gdal/3.8.5/lib/libgdal.dylib"
+GDAL_LIBRARY_PATH = "/usr/lib/libgdal.so"
 
 
 TEMPLATES = [
