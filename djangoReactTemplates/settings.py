@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-4&894^wusrouqpkt2@d9j&4me!skiqp6ony*1^i^4wei0p4k@%"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["geomatikk.ibm.ntnu.no", "localhost", "127.0.0.1"]
 
@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "django.contrib.gis",
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
@@ -56,6 +57,9 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = "djangoReactTemplates.urls"
+
+GDAL_LIBRARY_PATH = "/usr/local/Cellar/gdal/3.8.5/lib/libgdal.dylib"
+
 
 TEMPLATES = [
     {
@@ -80,14 +84,15 @@ WSGI_APPLICATION = "djangoReactTemplates.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "even_studass",  # your database name
-        "USER": "postgres",  # your database username
-        "PASSWORD": "postgres",  # your database password
-        "HOST": "geomatikk.ibm.ntnu.no",  # your database host
-        "PORT": "5433",  # your database port
+        "ENGINE": "django.contrib.gis.db.backends.postgis",
+        "NAME": "even_studass",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "geomatikk.ibm.ntnu.no",
+        "PORT": "5433",
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

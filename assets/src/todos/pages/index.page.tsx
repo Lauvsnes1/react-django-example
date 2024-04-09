@@ -2,12 +2,12 @@ import React, {memo} from "react";
 import {usePageContext} from "../../utils/usePageContext";
 import PostButton from "./components/postButton";
 import NamesList from "./components/studentList";
+import RandomPointButton from "./components/postPointButton";
 
 interface Todo {
     id: number
     title: string
 }
-
 
 
 const TodosIndexPage = memo(() => {
@@ -38,6 +38,7 @@ const TodosIndexPage = memo(() => {
             NB:</span> it is possible to omit the use of pipenv as used in the article.
         </p> 
         <PostButton/>
+        <RandomPointButton/>
         <NamesList/>
     </div>
     )

@@ -5,7 +5,33 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.http import require_http_methods
+from django.contrib.gis.geos import Point
+from .models import Location
 from .models import Item
+
+
+@csrf_exempt
+def add_location(request):
+    if request.method == "POST":
+        try:
+
+            # Assuming the request body is JSON and contains 'latitude' and 'longitude'
+            data = json.loads(request.body)
+            print(data)
+            latitude = float(data["latitude"])
+            longitude = float(data["longitude"])
+
+            # Create a new Location object with a random name (or however you wish to name it)
+            location = Location(name="Random Location", geom=Point(longitude, latitude))
+            location.save()
+
+            return JsonResponse({"status": "success", "id": location.id}, status=201)
+        except (ValueError, KeyError) as e:
+            return JsonResponse({"status": "error", "message": str(e)}, status=400)
+    else:
+        return JsonResponse(
+            {"status": "error", "message": "Only POST requests are allowed"}, status=405
+        )
 
 
 def list_items_view(request):
